@@ -1,0 +1,53 @@
+<!-- <?php  -->
+// Database configuration
+// define('DB_HOST', 'localhost');
+// define('DB_USER', 'root');
+// define('DB_PASS', '');
+// define('DB_NAME', 'order_processing_system'); -->
+
+// Create database connection
+// try {
+//     $db = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USER, DB_PASS);
+//     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// } catch(PDOException $e) {
+//     die("Database connection failed: " . $e->getMessage());
+// }
+
+// Helper function to redirect
+// function redirect($url) {
+//     header("Location: $url");
+//     exit();
+// }
+
+// // Helper function to display notifications
+// function showNotification($message, $type = 'success') {
+//     $_SESSION['notification'] = [
+//         'message' => $message,
+//         'type' => $type
+//     ];
+// }
+
+// Function to get all records from a table
+// function getAllRecords($db, $table, $orderBy = 'id') {
+//     try {
+//         $stmt = $db->query("SELECT * FROM $table ORDER BY $orderBy");
+//         return $stmt->fetchAll(PDO::FETCH_ASSOC);
+//     } catch(PDOException $e) {
+//         showNotification("Error fetching $table: " . $e->getMessage(), 'error');
+//         return [];
+//     }
+// }
+
+// Function to get a single record by ID
+// function getRecordById($db, $table, $id) {
+//     try {
+//         $stmt = $db->prepare("SELECT * FROM $table WHERE id = ?");
+//         $stmt->execute([$id]);
+//         return $stmt->fetch(PDO::FETCH_ASSOC);
+//     } catch(PDOException $e) {
+//         showNotification("Error fetching $table record: " . $e->getMessage(), 'error');
+//         return null;
+//     }
+// }
+
+// ?>
